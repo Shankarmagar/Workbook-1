@@ -20,9 +20,10 @@ public class Main {
      System.out.println("Enter the value based on given prompt for calculation:");
 
      char UserInput = scanner.next().charAt(0);
+     UserInput;
      int answer;
 
-     if(UserInput == 'A')
+     if(UserInput == 'A' )
      {
          //Do addition
           answer = firstNumber + secondNumber;
