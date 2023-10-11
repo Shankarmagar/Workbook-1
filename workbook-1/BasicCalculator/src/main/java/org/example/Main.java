@@ -4,11 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the first number: ");
         int firstNumber = scanner.nextInt();
         System.out.println("Enter the second number");
         int secondNumber = scanner.nextInt();
+
+
      System.out.println("Possible calculations: ");
      System.out.println("(A)dd");
      System.out.println("(S)ubtract");
@@ -42,17 +45,6 @@ public class Main {
      }
 
      System.out.println("After calculation, your answer is : "+ answer);
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
