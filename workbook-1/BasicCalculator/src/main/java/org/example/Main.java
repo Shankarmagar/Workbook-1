@@ -20,30 +20,26 @@ public class Main {
      System.out.println("Enter the value based on given prompt for calculation:");
 
      char UserInput = scanner.next().charAt(0);
-     UserInput;
      int answer;
 
-     if(UserInput == 'A' )
-     {
-         //Do addition
-          answer = firstNumber + secondNumber;
-     }
-     else if(UserInput == 'S')
-     {
-         //Subtract
-          answer = firstNumber - secondNumber;
-
-     }
-     else if (UserInput == 'M')
-     {
-         //Do multiplication
-          answer = firstNumber * secondNumber;
-     }
-     else
-     {
-         //Do Divide
-          answer = secondNumber/firstNumber;
-     }
+        switch (UserInput) {
+            case 'A':
+                // Do addition
+                answer = firstNumber + secondNumber;
+                break;
+            case 'S':
+                // Subtract
+                answer = firstNumber - secondNumber;
+                break;
+            case 'M', 'm':
+                // Do multiplication
+                answer = firstNumber * secondNumber;
+                break;
+            default:
+                // Do Divide
+                answer = secondNumber / firstNumber;
+                break;
+        }
 
      System.out.println("After calculation, your answer is : "+ answer);
 
